@@ -22,11 +22,11 @@ public class OrganizationServiceController {
     private OrganizationService orgService;
 
 
-	  @RequestMapping(value="/",method = RequestMethod.GET) 
-	  public Optional<Organization> getOrganization() {
-		  System.out.println("aaaa");
-		  return orgService.getOrg("100");
-	  }
+	@RequestMapping(value="/",method = RequestMethod.GET) 
+	public Optional<Organization> getOrganization() {
+	 System.out.println("aaaa");
+	 return orgService.getOrg("100");
+	}
 	 
 
 	  @RequestMapping(value="/{organizationId}",method = RequestMethod.GET) 
